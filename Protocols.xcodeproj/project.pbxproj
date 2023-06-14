@@ -32,6 +32,7 @@
 		E50F55022A38E9CD00A639EF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E50F55042A38EA3000A639EF /* SettingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsStoryboard.storyboard; sourceTree = "<group>"; };
 		E50F55062A38EA4300A639EF /* SettingsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDelegate.swift; sourceTree = "<group>"; };
+		E5B0FDED2A39C2D800A4225F /* Protocols.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Protocols.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		E50F54EA2A38E9B800A639EF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E5B0FDED2A39C2D800A4225F /* Protocols.entitlements */,
 				E50F54EB2A38E9B800A639EF /* AppDelegate.swift */,
 				E50F54ED2A38E9B800A639EF /* SceneDelegate.swift */,
 				E50F54EF2A38E9B800A639EF /* ViewController.swift */,
@@ -301,9 +303,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Protocols/Protocols.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9YJXZU9Z92;
+				DEVELOPMENT_TEAM = TCP97C389B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Protocols/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.Protocols;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.Protocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,9 +332,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Protocols/Protocols.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9YJXZU9Z92;
+				DEVELOPMENT_TEAM = TCP97C389B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Protocols/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -344,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.Protocols;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.Protocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
