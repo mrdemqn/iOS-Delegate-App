@@ -19,6 +19,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Customization"
+        
         saveButton.layer.borderWidth = 1
         saveButton.layer.borderColor = UIColor.systemBlue.cgColor
         saveButton.layer.cornerRadius = 5
