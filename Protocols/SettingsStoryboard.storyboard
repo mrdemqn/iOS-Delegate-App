@@ -28,7 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Hello world"/>
                                 <connections>
-                                    <action selector="setTextHelloWorldAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Ps-l3-68t"/>
+                                    <action selector="changeTextAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AT4-IR-qVS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqY-j5-CbW">
@@ -36,7 +36,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Some Lable"/>
                                 <connections>
-                                    <action selector="setTextSomeLAbelAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dOm-Yq-DpO"/>
+                                    <action selector="changeTextAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lvg-UX-IMj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5T-cc-oPs">
@@ -44,7 +44,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Customization"/>
                                 <connections>
-                                    <action selector="setTextCustomizationAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RNX-8r-2qG"/>
+                                    <action selector="changeTextAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pyO-dw-ybB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTA-xa-aPw">
@@ -52,7 +52,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delegate App"/>
                                 <connections>
-                                    <action selector="setTextDelegateAppAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6w6-6g-go9"/>
+                                    <action selector="changeTextAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="15W-gN-wxe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-1c-Bht">
@@ -67,7 +67,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Black"/>
                                 <connections>
-                                    <action selector="setBlackColor:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mtA-PF-sSu"/>
+                                    <action selector="changeTextColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nse-3U-tKZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-7R-Fxt">
@@ -76,7 +76,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Red"/>
                                 <connections>
-                                    <action selector="setRedColor:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GCp-sn-WWk"/>
+                                    <action selector="changeTextColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aXW-mK-w2C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeX-d8-K5d">
@@ -85,7 +85,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Blue"/>
                                 <connections>
-                                    <action selector="setBlueColor:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lbf-4E-uHy"/>
+                                    <action selector="changeTextColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RtD-vR-JJg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-Qu-B0K">
@@ -94,7 +94,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Green"/>
                                 <connections>
-                                    <action selector="setGreenColor:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Glw-b1-J0o"/>
+                                    <action selector="changeTextColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mg9-QC-BRA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXB-0O-Kxf">
@@ -108,15 +108,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="System"/>
                                 <connections>
-                                    <action selector="setSystemFont:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ack-o2-Ehn"/>
+                                    <action selector="changeFontAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="A00-ux-jpD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjF-b9-HiX">
-                                <rect key="frame" x="240.66666666666663" y="533" width="121" height="35"/>
+                                <rect key="frame" x="241.00000000000003" y="533.33333333333337" width="120.33333333333334" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="System Italic"/>
+                                <buttonConfiguration key="configuration" style="plain" title="System Italic">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="17"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="setItalicSystemFont:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YUx-by-nRD"/>
+                                    <action selector="changeFontAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Kg-6p-BC4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-HO-OAi">
@@ -137,7 +139,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="+"/>
                                         <connections>
-                                            <action selector="increaseFontSize:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZVE-oT-6bG"/>
+                                            <action selector="increaseFontSizeAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZVE-oT-6bG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY8-Ne-M3Z">
@@ -155,7 +157,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="-"/>
                                         <connections>
-                                            <action selector="decreaseFontSize:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cI7-17-VAQ"/>
+                                            <action selector="decreaseFontSizeAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DJq-FM-AH6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -182,7 +184,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save" cornerStyle="large"/>
                                 <connections>
-                                    <action selector="save" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BOF-y3-o2q"/>
+                                    <action selector="saveAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BOF-y3-o2q"/>
                                 </connections>
                             </button>
                         </subviews>

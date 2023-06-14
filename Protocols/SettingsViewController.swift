@@ -23,64 +23,36 @@ class SettingsViewController: UIViewController {
         
         saveButton.layer.borderWidth = 1
         saveButton.layer.borderColor = UIColor.systemBlue.cgColor
-        saveButton.layer.cornerRadius = 5
+        saveButton.layer.cornerRadius = 8
         
         fontSizeLabel.text = "\(config.fontSize)"
     }
     
-    @IBAction private func save() {
+    @IBAction private func saveAction() {
         delegate?.saveTextConfig(config)
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func setTextHelloWorldAction(_ sender: UIButton) {
+    @IBAction func changeTextAction(_ sender: UIButton) {
         config.text = sender.titleLabel?.text ?? ""
     }
     
-    @IBAction func setTextSomeLAbelAction(_ sender: UIButton) {
-        config.text = sender.titleLabel?.text ?? ""
+    @IBAction func changeTextColorAction(_ sender: UIButton) {
+        config.textColor = sender.titleLabel?.textColor ?? .black
     }
     
-    @IBAction func setTextCustomizationAction(_ sender: UIButton) {
-        config.text = sender.titleLabel?.text ?? ""
+    @IBAction func changeFontAction(_ sender: UIButton) {
+        config.font = sender.titleLabel?.font ?? .systemFont(ofSize: config.fontSize)
     }
     
-    @IBAction func setTextDelegateAppAction(_ sender: UIButton) {
-        config.text = sender.titleLabel?.text ?? ""
-    }
-    
-    @IBAction func setBlackColor(_ sender: Any) {
-        config.textColor = .black
-    }
-    
-    @IBAction func setRedColor(_ sender: Any) {
-        config.textColor = .red
-    }
-    
-    @IBAction func setBlueColor(_ sender: Any) {
-        config.textColor = .systemBlue
-    }
-    
-    @IBAction func setGreenColor(_ sender: Any) {
-        config.textColor = .green
-    }
-    
-    @IBAction func setSystemFont(_ sender: Any) {
-        config.font = UIFont.systemFont(ofSize: config.fontSize)
-    }
-    
-    @IBAction func setItalicSystemFont(_ sender: Any) {
-        config.font = UIFont.italicSystemFont(ofSize: config.fontSize)
-    }
-    
-    @IBAction func increaseFontSize(_ sender: Any) {
+    @IBAction func increaseFontSizeAction(_ sender: Any) {
         if config.fontSize < 100 {
             config.fontSize = config.fontSize + 1
             fontSizeLabel.text = "\(config.fontSize)"
         }
     }
     
-    @IBAction func decreaseFontSize(_ sender: Any) {
+    @IBAction func decreaseFontSizeAction(_ sender: Any) {
         if config.fontSize > 0 {
             config.fontSize = config.fontSize - 1
             fontSizeLabel.text = "\(config.fontSize)"
